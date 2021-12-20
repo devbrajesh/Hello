@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="29795" started-at="2021-05-22T16:37:01 IST" finished-at="2021-05-22T16:37:31 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="29795" started-at="2021-05-22T16:37:01 IST" finished-at="2021-05-22T16:37:31 IST">
+      <class name="assignment.spicejet.AppTest">
+        <test-method status="FAIL" signature="f1()[pri:0, instance:assignment.spicejet.AppTest@1c0542]" name="f1" is-config="true" duration-ms="29644" started-at="2021-05-22T16:37:01 IST" finished-at="2021-05-22T16:37:31 IST">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:7926
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRAJESH-PC', ip: '192.168.0.104', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_291'
+Driver info: driver.version: FirefoxDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:7926
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRAJESH-PC', ip: '192.168.0.104', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_291'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at browserSetup.browser.driverSetup(browser.java:37)
+at assignment.spicejet.AppTest.f1(AppTest.java:29)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:7926
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+... 39 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+at java.net.PlainSocketImpl.connect(Unknown Source)
+at java.net.SocksSocketImpl.connect(Unknown Source)
+at java.net.Socket.connect(Unknown Source)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+... 61 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f1 -->
+        <test-method status="SKIP" signature="f2()[pri:0, instance:assignment.spicejet.AppTest@1c0542]" name="f2" duration-ms="0" started-at="2021-05-22T16:37:31 IST" finished-at="2021-05-22T16:37:31 IST">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:7926
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRAJESH-PC', ip: '192.168.0.104', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_291'
+Driver info: driver.version: FirefoxDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:7926
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRAJESH-PC', ip: '192.168.0.104', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_291'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at browserSetup.browser.driverSetup(browser.java:37)
+at assignment.spicejet.AppTest.f1(AppTest.java:29)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:7926
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+... 39 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+at java.net.PlainSocketImpl.connect(Unknown Source)
+at java.net.SocksSocketImpl.connect(Unknown Source)
+at java.net.Socket.connect(Unknown Source)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+... 61 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f2 -->
+        <test-method status="SKIP" signature="f3()[pri:0, instance:assignment.spicejet.AppTest@1c0542]" name="f3" is-config="true" duration-ms="-1621681651581" started-at="2021-05-22T16:37:31 IST" finished-at="1970-01-01T05:30:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f3 -->
+      </class> <!-- assignment.spicejet.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
